@@ -1,0 +1,85 @@
+
+.App {
+  border: solid 2px white;
+  text-align: center;
+  font-family: 'Londrina Solid', cursive;
+  background-color: #232826;
+  width: 333px;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+  margin-left: 10px;
+
+}
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+.App-header {
+  background-color: #232826;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.board {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  background: black;
+  height: 34px;
+  width: 34px;
+}
+
+.opened {
+  background-color: #4e2081;
+}
+
+.flag {
+  background-image: url('target.svg');
+  background-size: 100%;
+}
+
+.explode {
+  background-color: red;
+  background-image: url('fired.svg');
+  background-size: 100%;
+}
+
+.reset {
+  cursor: pointer;
+}
